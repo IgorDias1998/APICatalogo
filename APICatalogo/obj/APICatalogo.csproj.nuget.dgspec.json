@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
+    "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
+    "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectPath": "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "packagesPath": "C:\\Users\\igord\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\obj\\",
+        "outputPath": "E:\\Repos\\APICatalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
