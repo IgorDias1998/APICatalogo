@@ -60,20 +60,16 @@ namespace APICatalogo.Controllers
         {
             var categorias = _uof.CategoriaRepository.GetCategorias(categoriasParameters);
 
-            var metadata = new
-            {
-                categorias.TotalCount,
-                categorias.PageSize,
-                categorias.CurrentPage,
-                categorias.TotalPages,
-                categorias.HasNext,
-                categorias.HasPrevious
-            };
-            Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
+            return ObterCategorias(categorias);
+        }
 
-            var categoriasDto = categorias.ToListaCategoriaDTO();
 
-            return Ok(categoriasDto);
+        [HttpGet("filter/nome/pagination")]
+        public ActionResult<IEnumerable<CategoriaDTO>> GetCategoriasFiltroNome([FromQuery] CategoriasFiltroNome categoriasFiltroNome)
+        {
+            var categorias = _uof.CategoriaRepository.GetCategoriasFiltroNome(categoriasFiltroNome);
+
+            return ObterCategorias(categorias);
         }
 
         [HttpGet("{id:int}", Name ="ObterCategoria")]
@@ -146,6 +142,24 @@ namespace APICatalogo.Controllers
             var categoriaExcluidaDTO = categoriaExcluida.ToCategoriaDTO();
 
             return Ok(categoriaExcluidaDTO);
+        }
+
+        private ActionResult<IEnumerable<CategoriaDTO>> ObterCategorias(PagedList<Categoria> categorias)
+        {
+            var metadata = new
+            {
+                categorias.TotalCount,
+                categorias.PageSize,
+                categorias.CurrentPage,
+                categorias.TotalPages,
+                categorias.HasNext,
+                categorias.HasPrevious
+            };
+            Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
+
+            var categoriasDto = categorias.ToListaCategoriaDTO();
+
+            return Ok(categoriasDto);
         }
     }
 }
