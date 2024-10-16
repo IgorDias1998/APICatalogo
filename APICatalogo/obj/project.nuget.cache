@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PwzR7il6PBw=",
+  "dgSpecHash": "UmkXOYUOvCM=",
   "success": true,
-  "projectFilePath": "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+  "projectFilePath": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\igord\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\igord\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

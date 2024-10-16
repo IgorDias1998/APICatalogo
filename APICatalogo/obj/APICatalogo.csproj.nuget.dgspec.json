@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
+    "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
+    "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "E:\\Repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectPath": "C:\\Users\\igord\\source\\repos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "packagesPath": "C:\\Users\\igord\\.nuget\\packages\\",
-        "outputPath": "E:\\Repos\\APICatalogo\\APICatalogo\\obj\\",
+        "outputPath": "C:\\Users\\igord\\Source\\Repos\\APICatalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
